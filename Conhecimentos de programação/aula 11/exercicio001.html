@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMIGRAÇÃO</title>
+    <style>
+        div#res{
+            background: rgb(243, 217, 178);
+            color: rgb(161, 161, 221)   
+        }
+    </style>
+
+</head>
+<body>
+    <h1><Strong>SISTEMA DE IMIGRAÇÃO</Strong></h1>
+    Informe seu pais de origem<input type="text" name="txtpais" id="txtpais">
+        <input type="button" value="Consultar" onclick="consultar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function consultar(){
+            var auxpais = window.document.querySelector(`input#txtpais`).value  
+            var res = window.document.querySelector(`div#res`)
+            var país = 
+            res.innerHTML = `Seu país de origem é <strong>${auxpais}</strong>`
+            if (auxpais == 'Brasil'){
+                res.innerHTML += '<p>Você é brasileiro <strong>BRASILEIRO</strong><p>'
+            }else {
+               res.innerHTML += '<p>Você é estrangeiro<strong>ESTRANGEIRO</strong>!!<p>'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body {
+    background-color: lightgrey;
+}
+
+#paragraph-result {
+    margin-top: 50px;
+}
+
+input {
+    width: 100px;
+}
